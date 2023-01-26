@@ -39,7 +39,7 @@ ul {
 }
   
 li {
-    background-color: rgba(0, 0, 0, 0.600);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
   
@@ -84,8 +84,9 @@ a {
   flex-grow: 1;
 }
 
-.sides{
-    border-right: 1px white solid;
+.rWhite{
+    border-right: 2px solid;
+    border-right-color: white;
 }
 
 .item h1{
@@ -127,12 +128,8 @@ a {
   font-size: 1.4rem;
 }
 
-footer{
-  height: 2vw;
-  background-color: #00A4BD;
-}
-
-@media (max-width: 1100px){
+/* Media Query for 1440px Large Laptop*/
+@media (max-width: 1440px){
   ul {
     list-style: none;
     display: flex;
@@ -143,54 +140,118 @@ footer{
     text-decoration: none;
     color: white;
     padding: 0px 5px 0px 5px;
-    font-size: 1rem;
+    font-size: 2rem;
   }
-
-  
-  .bgContent{
-    width: 90vw;
-    height: 100vw;
+    .bgContent{
+    width: 70vw;
+    height: 40vw;
     background-color: rgba(0, 0, 0, 0.800);
   }
-
-  .contentHeader img{
-    height: 50vw;
-    margin: 15px;
- }
-
+  
   .textBox{
     background-color: #fff;
     width: 60vw;
-    height: 95vw;
+    height: 35vw;
     margin: 15px;
   }
 
   .textBox p {
     margin: 0;
-    font-size: 1em;
+    font-size: 15px;
   }
-  .dropdown {
-    display: inline-block;
-    position: relative;
+
+  .contentHeader img{
+    height: 25vw;
+    width: 20vw;
+    margin: 15px;
+ }
+}
+/* Media query for 1024px (Small Laptop)*/
+@media (max-width: 1024px){
+
+  a {
+    font-size: 1.5rem;
   }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
+    .bgContent{
+    width: 70vw;
+    height: 70vw;
+    background-color: rgba(0, 0, 0, 0.800);
+  }
+  
+  .textBox{
+    background-color: #fff;
+    width: 60vw;
+    height: 65vw;
+  }
+
+  .textBox p {
+    font-size: 15px;
+  }
+
+  .contentHeader img{
+    height: 25vw;
+    width: 20vw;
+ }
+}
+
+/* Media Query for 768px Tablet*/
+@media (max-width: 768px){
+  a {
+    font-size: 2rem;
+  }
+    .bgContent{
+    width: 90vw;
+    height: 80vw;
+    background-color: rgba(0, 0, 0, 0.800);
+  }
+  
+  .textBox{
+    background-color: #fff;
+    width: 60vw;
+    height: 70vw;
+  }
+
+  .textBox p {
+    font-size: 14px;
+  }
+
+  .contentHeader img{
+    height: 25vw;
+    width: 20vw;
+ }
+
+ .dropdown-content{
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+ }
+}
+
+@media (max-width: 425px){
+  a {
+    font-size: 2rem;
   }
-  .dropdown:hover .dropdown-content {
-    display: block;
+    .bgContent{
+    width: 90vw;
+    height: 180vw;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.800);
   }
-  .dropdown-content a {
-    display: block;
-    color: #ff0000;
-    padding: 5px;
-    text-decoration: none;
+  
+  .textBox{
+    background-color: #fff;
+    width: 60vw;
+    height: 160vw;
   }
-  .dropdown-content a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
+
+  .textBox p {
+    font-size: 11.5px;
   }
+
+  .contentHeader img{
+    height: 25vw;
+    width: 20vw;
+ }
+
+ .dropdown-content{
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+ }
 }

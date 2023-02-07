@@ -1,5 +1,5 @@
 body, html{
-    margin: 0;
+    margin: 0 auto;
     height: 100%;
 }
 
@@ -14,6 +14,19 @@ body, html{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bg-explore{
+ /* The image used */
+ background-image: url("img/bg.jpg");
+
+ /* Full height */
+ height: 155%;
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .container{
@@ -89,11 +102,16 @@ a {
     border-right-color: white;
 }
 
-.item h1{
+.lWhite{
+  border-left: 2px solid;
+  border-left-color: white;
+}
+
+.itemHeader{
   text-align: center;
   font-size: 4rem;
   color: white;
-  text-shadow: 0 -20px black;
+  text-shadow: 0 -5px black;
 }
 
 .tLine{
@@ -118,7 +136,7 @@ a {
  }
 
 .textBox{
-  background-color: rgba(255, 255, 255, 0.700);
+  background-color: rgba(189, 189, 189, 0.700);
   height: 30vw;
   margin: 15px;
 }
@@ -126,6 +144,12 @@ a {
 .textBox p{
   padding: 5px;
   font-size: 1.4rem;
+}
+
+.textHeader{
+  text-align: center;
+  font-size: 4rem;
+  padding: 5px;
 }
 
 /* Media Query for 1440px Large Laptop*/
@@ -149,7 +173,7 @@ a {
   }
   
   .textBox{
-    background-color: #fff;
+    background-color: rgba(189, 189, 189, 0.700);
     width: 60vw;
     height: 35vw;
     margin: 15px;
@@ -179,7 +203,7 @@ a {
   }
   
   .textBox{
-    background-color: #fff;
+    background-color: rgba(189, 189, 189, 0.700);
     width: 60vw;
     height: 65vw;
   }
@@ -206,7 +230,7 @@ a {
   }
   
   .textBox{
-    background-color: #fff;
+    background-color: rgba(189, 189, 189, 0.700);
     width: 60vw;
     height: 70vw;
   }
@@ -237,7 +261,7 @@ a {
   }
   
   .textBox{
-    background-color: #fff;
+    background-color: rgba(189, 189, 189, 0.700);
     width: 60vw;
     height: 160vw;
   }
